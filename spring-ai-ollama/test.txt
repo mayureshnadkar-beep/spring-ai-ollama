@@ -1,0 +1,2 @@
+GITHUB_TOKEN = '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'          # Optional — leave blank for unauthenticated (60 req/hr)
+HF_TOKEN     = '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'          # Required for HF Inference API  (hf_xxxxx...)
