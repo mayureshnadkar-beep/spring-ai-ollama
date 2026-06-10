@@ -1,0 +1,5 @@
+com\spring\ollama\controller\Chatcontroller.class
+com\spring\ollama\service\ChatService.class
+com\spring\ollama\service\ChatServiceImpl.class
+com\spring\ollama\config\AIConfig.class
+com\spring\ollama\SpringAiOllamaApplication.class
