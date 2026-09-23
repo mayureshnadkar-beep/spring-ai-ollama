@@ -32,8 +32,8 @@ public class Chatcontroller {
     @GetMapping("/chat")
     public ResponseEntity<String> chat(@RequestParam(value = "q") String query)
     {
-        String GITHUB_TOKEN = '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'          # Optional — leave blank for unauthenticated (60 req/hr)
-        String HF_TOKEN     = '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' 
+        String GITHUB_TOKEN = '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'
+        String HF_TOKEN     = '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'
         return ResponseEntity.ok(chatService.chat(query));
 
 //        String responseContent = this.ollamaChatClient.prompt(query).call().content();
