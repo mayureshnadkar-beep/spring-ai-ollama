@@ -32,6 +32,11 @@
 	</properties>
 	<dependencies>
 		<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
 		</dependency>
@@ -44,7 +49,13 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>2.14.1</version>
+		    <vulnerability>CVE-2021-44228 (Log4Shell)</vulnerability>
+		    <severity>Critical</severity>
+		    <recommendation>Upgrade to 2.17.1 or later</recommendation>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
@@ -61,6 +72,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
+		<!--  -->
 	</dependencyManagement>
 
 	<build>
